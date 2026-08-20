@@ -1,0 +1,59 @@
+name: mediscan
+description: "Privacy-first Flutter app that OCR-scans lab reports, extracts health readings, and charts trends."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # OCR - on-device only
+  google_mlkit_text_recognition: ^0.14.0
+
+  # PDF handling
+  pdfx: ^2.8.0
+  # PDF text layer extraction
+  syncfusion_flutter_pdf: ^28.2.5
+
+  # Camera / image capture
+  image_picker: ^1.1.2
+
+  # Encrypted local database
+  sqflite_sqlcipher: ^3.1.0+2
+
+  # Encryption key management (Android Keystore / iOS Secure Enclave)
+  flutter_secure_storage: ^9.2.4
+
+  # Trend charts
+  fl_chart: ^0.70.2
+
+  # Fuzzy string matching
+  string_similarity: ^2.0.0
+
+  # Biometric / PIN authentication
+  local_auth: ^2.3.0
+
+  # State management
+  provider: ^6.1.5
+
+  # Date formatting
+  intl: ^0.20.2
+
+  # Path utilities
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+  # File picker for PDF import
+  file_picker: ^8.3.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqflite_common_ffi: ^2.4.2+1
+
+flutter:
+  uses-material-design: true
